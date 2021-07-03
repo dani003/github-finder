@@ -17,7 +17,7 @@ export class Search extends Component {
     //when arrows are not used, we have to use bind()
     onSubmit= (e) => {
         e.preventDefault();
-        if(this.state.text == ''){
+        if(this.state.text === ''){
             this.props.setAlert(' Please enter something', 'light');
         }else{
             this.props.searchUsers(this.state.text);
